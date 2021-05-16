@@ -1,0 +1,8 @@
+_BASE_: './base.yml'
+
+LEVEL1:
+  V2: 4.0
+  LEVEL2:
+    A: 0.11
+
+OUTPUT_DIR: logs/sample/
