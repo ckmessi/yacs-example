@@ -1,6 +1,6 @@
 # Yacs Example
 
-A example to demonstrate how to organize experimental code using `yacs` package.
+An example to demonstrate how to organize experimental code using `yacs` package.
 
 ## Basic Structure
 When integrating `yacs`, the only things to do is:
@@ -30,15 +30,15 @@ OUTPUT_DIR: logs/sample/
 ```
 
 Here we can analyze the cfg config content:
-- `FIX_SEED` is defined in `project/config/defaults.py`, and it is not be overrode;
-- `LEVEL1.V1` in `project/config/defaults.py` is `False`, but in `base.yml` it is overrode as `True`, and `sample.yml` inherits the value from `base.yml`;
-- `LEVEL1.V2` is overrode by `base.yml` to `3.0` and overrode by `sample.yml` again, so it is `4.0` finally;
-- `LEVEL1.LEVEL2.A` is the overrode by `sample.yml` to `0.11`;
-- `LEVEL1.LEVEL2.B` is the overrode by command line argument to `0.22`;
-- `LEVEL1.LEVEL2.C` is not overrode, so it is the default value `0.3`;
+- `FIX_SEED` is defined in `project/config/defaults.py`, and it is not be overrided;
+- `LEVEL1.V1` in `project/config/defaults.py` is `False`, but in `base.yml` it is overrided as `True`, and `sample.yml` inherits the value from `base.yml`;
+- `LEVEL1.V2` is overrided by `base.yml` to `3.0` and overrided by `sample.yml` again, so it is `4.0` finally;
+- `LEVEL1.LEVEL2.A` is overrided by `sample.yml` to `0.11`;
+- `LEVEL1.LEVEL2.B` is overrided by command line argument to `0.22`;
+- `LEVEL1.LEVEL2.C` is not overrided, so it is the default value `0.3`;
 
 As the example shows, the configuration content can be easily controlled by config files or command line arguments.
-Hope it helps to split and record the experimental configs.
+Hope it will help to split and record the experimental configs.
 
 ## Reference
 - https://github.com/rbgirshick/yacs
